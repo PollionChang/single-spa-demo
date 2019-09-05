@@ -1,0 +1,16 @@
+{{#spritesheet}}
+[class^="icon-"],
+[class*=" icon-"]{
+    background-image: url({{{escaped_image}}});
+    background-size:{{px.width}} {{px.height}};
+}
+{{/spritesheet}}
+{{#sprites}}
+.icon-{{name}}{
+    background-position:{{offset_x}}px {{offset_y}}px;
+    display:inline-block;
+    width:{{width}}px;
+    height:{{height}}px;
+}
+
+{{/sprites}}
